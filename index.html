@@ -9,10 +9,13 @@
 <body>
 <main>
     <h1>Streetcat Rescue</h1>
-    <div>
-        <img id="cat" src="https://placekitten.com/64/64" alt="kitten"/>
+    <div class="image">
+        <img id="cat" src="https://placekitten.com/128/128" alt="kitten" onClick="onClick()"/>
     </div>
-    <div id="cat-counter">Cat Clicks: 0</div>
+    <div class="clickcount">
+        <p>Cat Clicks:</p>
+        <div id="clicks">0</div>
+    </div>
     <input class="happy" type="text" name="amount" id="amount" placeholder="Any amount helps!"/>
     <button class="happy" id="btn">We appreciate your donation!</button>
 </main>

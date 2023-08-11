@@ -1,20 +1,26 @@
 body {
-    background: #28debd;
+    background: #9D8189;
     font-family: sans-serif;
-    color: #daae6d;
+    color: #9D8189;
     display: grid;
     place-items: center;
 }
 
 main {
     width: 35vw;
-    background: #005678;
+    background: #F4ACB7;
+    border-radius: 25px;
     padding: 5px;
     text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 button {
-    background: #585a91;
+    background: #D8E2DC;
     padding: 8px 20px;
     margin: 20px;
     transform: rotate(-5deg);
@@ -22,27 +28,65 @@ button {
 }
 
 .happy {
-    color: #f31414;
-    border-color: lightpink;
+    color: #9D8189;
+    border-color: #9D8189;
     border-radius: 3px;
     margin-top: 10px;
+}
+
+.clickcount {
+    padding: 5px;
+    background: #FFCAD4;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 input {
     margin: 10px;
 }
 
-div {
+.image {
     padding: 15px;
-    background: #dcccdc;
+    background: #FFCAD4;
+    border-radius: 25px;
     display: grid;
     place-items: center;
+    padding: 50px;
+}
+
+
+@keyframes pop {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(0.8) rotate(-180deg);
+    }
+    100%{
+        transform: scale(1.2) rotate(360deg);
+    }
 }
 
 img:hover {
-    transform: rotate(-10deg);
+    animation: pop 1s forwards;
 }
 
 main:hover button {
     transform: rotate(5deg);
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(0.8) rotate(-180deg);
+    }
+    100%{
+        transform: scale(1.2) rotate(360deg);
+    }
 }
