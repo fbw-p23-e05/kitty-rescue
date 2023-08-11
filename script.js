@@ -1,5 +1,9 @@
+
+
 const button = document.getElementById('btn');
 const input = document.getElementById('amount');
+
+
 
 
 function handleDonation() {
@@ -17,6 +21,7 @@ var bgToggle = true;
 var cat = document.getElementById("cat");
 
 function catClick() {
+
     if (bgToggle){
         document.body.style.background = 'pink';
         bgToggle = false;
@@ -24,14 +29,14 @@ function catClick() {
         document.body.style.background = null;
         bgToggle = true;
     }
+
 }
 
 var clicks = 0;
-
 function onClick() {
     clicks += 1;
     document.getElementById("clicks").innerHTML = clicks;
-};
+}
 
 button.addEventListener('click', handleDonation);
 cat.addEventListener('click', catClick);
