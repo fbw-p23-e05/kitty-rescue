@@ -1,6 +1,11 @@
+
+
 const button = document.getElementById('btn');
 const input = document.getElementById('amount');
 const cat = document.getElementById('cat');
+const catCounter = document.getElementById('cat-counter');
+
+let clickCount = 0;
 
 function handleDonation() {
     const amount = input.value;
@@ -14,7 +19,10 @@ function handleDonation() {
 }
 
 function catClick() {
-    document.body.style.background = 'pink';
+    clickCount++;
+    catCounter.textContent = `Cat Clicks: ${clickCount}`;
+    document.body.style.background = '#ffc0cb'; 
+    cat.classList.toggle("clicked");
 }
 
 function moveCat() {
@@ -30,7 +38,6 @@ function moveCat() {
 function toggleCatClass() {
     cat.classList.toggle("rotate");
 }
-
 
 button.addEventListener('click', handleDonation);
 cat.addEventListener('click', catClick);
