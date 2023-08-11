@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kitty Rescue</title>
+    <link rel="stylesheet" href="styles.css"/>
     <style>
       body {
         background: #28debd;
@@ -120,5 +121,16 @@
       cat.addEventListener('click', catClick);
       // catClick();
     </script>
+    <main>
+      <h1>Streetcat Rescue</h1>
+      <div>
+          <img id="cat" src="https://placekitten.com/64/64" alt="kitten"/>
+      </div>
+      <div id="cat-counter">Cat Clicks: 0</div>
+      <input class="happy" type="text" name="amount" id="amount" placeholder="Any amount helps!"/>
+      <button class="happy" id="btn">We appreciate your donation!</button>
+  </main>
+  <script src="script.js"></script>
   </body>
+
 </html>

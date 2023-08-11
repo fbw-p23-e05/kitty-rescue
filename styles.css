@@ -1,0 +1,48 @@
+body {
+    background: #28debd;
+    font-family: sans-serif;
+    color: #daae6d;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    width: 35vw;
+    background: #005678;
+    padding: 5px;
+    text-align: center;
+}
+
+button {
+    background: #585a91;
+    padding: 8px 20px;
+    margin: 20px;
+    transform: rotate(-5deg);
+    transition: all 0.3s;
+}
+
+.happy {
+    color: #f31414;
+    border-color: lightpink;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
+div {
+    padding: 15px;
+    background: #dcccdc;
+    display: grid;
+    place-items: center;
+}
+
+img:hover {
+    transform: rotate(-10deg);
+}
+
+main:hover button {
+    transform: rotate(5deg);
+}
