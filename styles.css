@@ -1,90 +1,45 @@
-/* styles.css */
-
 body {
-    background: #f5f5f5;
-    font-family: Arial, sans-serif;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.cat-container {
+    background: #ffffff;
+    font-family: sans-serif;
+    color: #000000;
+    display: grid;
+    place-items: center;
+    }
+    main {
+    width: 500px;
+    height: 380px;
+    background: #00781e;
+    padding: 5px;
     text-align: center;
-    
-}
-
-.cat {
-    width: 360px;
-    height: 360px;
-    background-color: #c4d8ab;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
-
-.cat.clicked {
-    background-color: #ffb6b6; 
-}
-
-.main-container {
-    background: #005678;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-button {
-    background: lightblue;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-button:hover {
-    background: #4ea1d3;
-    transform: scale(1.05) rotate(-5deg);
-}
-
-.happy {
-    color: #f31414;
-    border: 2px solid lightpink;
+    }
+    button {
+    background: #ff0015;
+    padding: 8px 20px;
+    margin: 90px;
+    rotate: 6deg;
+    transition: all 0.3s;
+    }
+    .happy {
+    color: #000000;
+    border-color: lightpink;
     border-radius: 3px;
-    padding: 6px 10px;
     margin-top: 10px;
-}
-
-input {
+    }
+    input {
+    margin: 30px;
+    }
+    
+    div {
+    padding: 15px;
     margin: 10px;
-    padding: 8px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-img {
-    width: 100%;
-    max-width: 300px;
-    border: 3px solid #d9534f;
-    border-radius: 50%;
-    transition: transform 0.3s;
-}
-
-img:hover {
-    transform: rotate(-15deg);
-}
-
-#cat-counter {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
+    background: #1900ff;
+    display: grid;
+    place-items: center;
+    }
+    img:hover {
+    rotate: 25deg;
+    }
+    
+    main:hover button {
+    rotate: -10deg;
+    }
