@@ -48,6 +48,12 @@
       main:hover button {
         rotate: 5deg;
       }
+      section {background: rgb(22, 41, 161); height:150px; width:100%; text-align:center;}
+      
+      #imgsize {width: 300px; height: 200px;}
+      
+      .bow_wow {color: white; border-color:antiquewhite; }   
+     
     </style>
   </head>
   <body>
@@ -65,11 +71,22 @@
       />
       <button class="happy" id="btn">We appreciate your donation!</button>
     </main>
+    <br><br>
+    <section>
+      <h1> Streetdog Rescue </h1>
+      <div>
+        <img id="imgsize" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Street_dog_in_pune01.jpg" alt="street dog">
+      </div>
+      <input type="text" name="amountDog" id="amountDog" placeholder="&#128021;">
+      <button class="bow_wow" id="btntwo">bow-wow</button>
+    </section>
 
     <script>
       const button = document.getElementById('btn');
       const input = document.getElementById('amount');
       const cat = document.getElementById('cat');
+      const buttonDog = document.getElementById('btntwo');
+      const inputDog = document.getElementById('amountDog');
 
       function handleDonation() {
         const amount = input.value;
@@ -86,6 +103,19 @@
         document.body.style.background = 'pink';
       }
 
+      function handleDonationdog() {
+        const amountDog = inputDog.value;
+
+        if (amountDog ==0) {
+          alert('Woof Woof');
+
+          document.querySelector('section').style.background = 'black';
+        } else {
+          alert('Thanks for the donation of $ ${amount}');
+        }
+      }
+      
+      btntwo.addEventListener('click', handleDonationdog);
       btn.addEventListener('click', handleDonation);
       cat.addEventListener('click', catClick);
       // catClick();
